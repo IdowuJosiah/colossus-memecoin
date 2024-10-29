@@ -1,6 +1,6 @@
 "use client"
-import React, { useState, useEffect } from 'react';
-import './slide-text.scss'
+import React, { useEffect, useRef, useState } from 'react';
+import './slide-text.scss';
 
 interface SlideOutWordsProps {
   words: string[]; // Array of words to animate
@@ -10,12 +10,16 @@ interface SlideOutWordsProps {
 const SlideOutWords: React.FC<SlideOutWordsProps> = ({ words, onComplete }) => {
   const [activeIndex, setActiveIndex] = useState(0);
   const [isAnimating, setIsAnimating] = useState(true);
+  const elementData = useRef<HTMLDivElement | null>(null);
+  const [animate, setAnimate] = useState(false);
 
   useEffect(() => {
     if (isAnimating && activeIndex < words.length) {
+      setAnimate(true);
       const timer = setTimeout(() => {
         setActiveIndex((prevIndex) => prevIndex + 1);
-      }, 1000); // Adjust timing as needed
+        setAnimate(false);
+      }, 2000); // Adjust timing as needed
       return () => clearTimeout(timer);
     } else if (activeIndex >= words.length) {
       setIsAnimating(false);
@@ -25,14 +29,39 @@ const SlideOutWords: React.FC<SlideOutWordsProps> = ({ words, onComplete }) => {
     }
   }, [activeIndex, isAnimating, words.length, onComplete]);
 
+  useEffect(() => {
+    if (elementData.current) {
+      elementData.current.style.setProperty('--outline-width', `${elementData.current.clientWidth + 1}px`);
+    }
+  }, [elementData.current, words, activeIndex]);
+
   return (
-    <div className='slide-out-words-container'>
+   <section className='slide-out-section'>
+     <div className="slide-out-words-container">
       {words.map((word, index) => (
-        <div key={index}>
-          {index === activeIndex && <span>{word}</span>}
+        <div
+          key={index}
+          ref={(el) => {
+            if (index === activeIndex) {
+              elementData.current = el;
+            }
+          }}
+          className="text-outline"
+        >
+          {index === activeIndex && (
+            <>
+              <span className="outline-text bg-text">{word}</span>
+              <div className="outline-text main-text">
+                <div className={`span-text ${animate ? 'animate' : ''}`}>
+                  <span>{word}</span>
+                </div>
+              </div>
+            </>
+          )}
         </div>
       ))}
     </div>
+   </section>
   );
 };
 

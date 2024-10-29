@@ -1,22 +1,66 @@
-.slide-out-words-container {
+.slide-out-section {
+    width: 100%;
+    height: 100vh;
     display: flex;
-    flex-direction: column;
     align-items: center;
-    
-    span {
-      font-size: 1.5rem;
-      opacity: 0;
-      animation: fadeInOut 1s ease forwards;
+    justify-content: center;
+    font-family: var(--font-primary);
+  
+    :root {
+      --text-color: teal;
+      --outline-width: 0;
     }
   
-    @keyframes fadeInOut {
-      0%, 100% {
-        opacity: 0;
-        transform: translateY(-20px);
+    .slide-out-words-container {
+      width: fit-content;
+      position: relative;
+      letter-spacing: 2px;
+    }
+  
+    .text-outline {
+      position: relative;
+      font-size: 3.5vw;
+      font-weight: 600;
+      color: var(--text-color);
+    }
+  
+    .bg-text {
+      -webkit-text-stroke: 1px var(--text-color); // Ensure color and stroke width are set
+      -webkit-text-fill-color: transparent; // Ensure the inside is transparent for outline visibility
+    }
+  
+    .main-text {
+      color: var(--text-color);
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+    }
+  
+    .span-text {
+      position: relative;
+      overflow: hidden;
+      width: 0; // Starting width for animation
+      border-right: 4px solid var(--text-color);
+      transition: width 2s ease-in-out; // Smooth width transition
+    }
+  
+    .animate {
+      animation: fillWidth 2s forwards; // Add forwards to retain the width after animation ends
+    }
+  
+    span {
+      display: block;
+      width: var(--outline-width); // Ensure span uses the calculated outline width
+    }
+  
+    @keyframes fillWidth {
+      from {
+        width: 0;
       }
-      50% {
-        opacity: 1;
-        transform: translateY(0);
+      to {
+        width: var(--outline-width); // Animate to the full calculated width
       }
     }
   }

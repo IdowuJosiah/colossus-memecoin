@@ -1,0 +1,48 @@
+.footer-section {
+    position: relative;
+    padding: 50px 25px;
+    font-family: var(--font-lexend);
+    display: flex;
+    flex-direction: column;
+    line-height: 45px;
+
+    .copy-button {
+        border: 1px solid #4CAF50;
+        color: #4CAF50;
+        font-size: 16px;
+        padding: 15px 35px;
+        cursor: pointer;
+        width: fit-content;
+    }
+
+    .footer-header {
+        font-size: 25px;
+        font-weight: 600;
+        color: rgb(29, 155, 240);
+    }
+
+    span {
+        font-size: 15px;
+        font-weight: 500;
+    }
+
+    .tooltip {
+        position: absolute;
+        bottom: 50%; 
+        left: 50%;
+        transform: translateX(-50%);
+        background-color: #4CAF50;
+        color: white;
+        padding: 0.2em 1em;
+        border-radius: 5px;
+        font-size: 14px;
+        opacity: 0;
+        pointer-events: none;
+        transition: opacity 0.3s ease-in-out;
+    }
+
+    .tooltip.show {
+        opacity: 1;
+        pointer-events: auto;
+    }
+}

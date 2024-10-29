@@ -1,0 +1,22 @@
+.navigation-bar{
+    background: #fff;
+    padding: 35px;
+    width: 100%;
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+
+    .navigation-content{
+        display: flex;
+        gap: 35px;
+        font-family: var(--font-urbanist);
+        color: rgb(0,0,0);
+        font-size: 20px;
+        font-weight: 500;
+        cursor: pointer;
+        text-decoration: none;
+        letter-spacing: 0.5px;
+    }
+}
