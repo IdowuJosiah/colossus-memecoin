@@ -33,7 +33,7 @@ const SlideOutWords: React.FC<SlideOutWordsProps> = ({ words, onComplete }) => {
     if (elementData.current) {
       elementData.current.style.setProperty('--outline-width', `${elementData.current.clientWidth + 1}px`);
     }
-  }, [elementData.current, words, activeIndex]);
+  }, [words, activeIndex]);
 
   return (
    <section className='slide-out-section'>

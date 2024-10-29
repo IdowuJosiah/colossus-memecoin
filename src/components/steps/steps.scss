@@ -1,0 +1,31 @@
+.steps-section{
+    position: relative;
+    padding: 75px 25px;
+    overflow-x: hidden;
+
+    .step-line{
+        width: 1px;
+        background:rgb(13, 20, 26);
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 50%;
+        transform: translateX( -50%);
+    }
+
+    .step-container{
+        display: flex;
+
+        .step{
+            width: 45%;
+            height: 200px;
+            border: 1px solid rgb(13, 20, 26);
+            // background: rgb(13, 20, 26);
+            border-radius: 5px;
+        }
+    }
+
+    .step-container.right{
+        justify-content: flex-end;
+    }
+}
