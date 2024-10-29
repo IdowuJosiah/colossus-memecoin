@@ -1,0 +1,23 @@
+.slide-out-words-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    span {
+      font-size: 1.5rem;
+      opacity: 0;
+      animation: fadeInOut 1s ease forwards;
+    }
+  
+    @keyframes fadeInOut {
+      0%, 100% {
+        opacity: 0;
+        transform: translateY(-20px);
+      }
+      50% {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+  }
+  
