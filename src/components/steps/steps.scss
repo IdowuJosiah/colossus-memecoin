@@ -1,8 +1,14 @@
+
+.step-section-header{
+    background-image: url("/GbEioERbQAAEH3P.jpeg");
+    width: 100%;
+    background-size: cover;
+}
 .steps-section{
     position: relative;
     padding: 75px 25px;
     overflow-x: hidden;
-
+    color: white;
     .step-line{
         width: 1px;
         background:rgb(13, 20, 26);
@@ -19,9 +25,21 @@
         .step{
             width: 45%;
             height: 200px;
-            border: 1px solid rgb(13, 20, 26);
             // background: rgb(13, 20, 26);
             border-radius: 5px;
+            font-family: var(--font-urbanist);
+            .career-info-container{
+                .career-info-path{
+                    display: flex;
+                    flex-direction: column;
+                    gap: 15px;
+                    .step-header{
+                        font-size: 28px;
+                        font-weight: 600;
+
+                    }
+                }
+            }
         }
     }
 

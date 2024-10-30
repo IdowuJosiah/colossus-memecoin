@@ -31,21 +31,54 @@ const Steps = () => {
   }, []);
 
   return (
-    <div className="steps-section">
-      <div className="step-line"></div>
-      <div className="step-container">
-        <div className="step"></div>
+      <div className="step-section-header">
+          <div className="steps-section">
+              <div className="step-line">
+
+              </div>
+              <div className="step-container">
+                  <div className="step">
+                      <div className="career-info-container">
+                          <ul className="career-info-path">
+                              <li className="step-header" style={{listStyle:"none"}}> Create a Wallet</li>
+                              <li style={{listStyle:"none"}} className="mid">Download Phantom or your preferred wallet from the App Store or Google Play Store for free. For desktop users, download the Google Chrome extension by visiting the Phantom app website.</li>
+                          </ul>
+                      </div>
+                  </div>
+              </div>
+              <div className="step-container right">
+                  <div className="step">
+                      <div className="career-info-container  second">
+                          <ul className = 'career-info-path'>
+                              <li className="step-header" style={{listStyle:"none"}}>GET SOME SOL</li>
+                              <li className="mid">Ensure you have SOL in your wallet to swap for $MEWING. If you don’t have any SOL, you can purchase SOL from an exchange or use a cross-chain swap service to send SOL to your wallet.</li>
+                          </ul>
+                      </div>
+                  </div>
+              </div>
+              <div className="step-container">
+                  <div className="step">
+                      <div className="career-info-container">
+                          <ul className = 'career-info-path'>
+                              <li className="step-header" style={{listStyle:"none"}}> Go to <span><a style={{textDecoration:"none"}} href="https://jup.ag/">Jup.ag</a></span></li>
+                              <li className="mid">Visit Jup.ag in Google Chrome or use the browser within your Phantom app. Connect your wallet, paste the $MEWING token address into Jupiter, and confirm the swap. When prompted by Phantom for a wallet signature, approve it.</li>
+
+                          </ul>
+                      </div>
+                  </div>
+              </div>
+              <div className="step-container right">
+                  <div className="step">
+                      <div className="career-info-container second">
+                          <ul className="career-info-path">
+                              <li className="step-header" style={{listStyle:"none"}}> SWAP</li>
+                              <li className="mid">Download Phantom or your preferred wallet from the App Store or Google Play Store for free. For desktop users, download the Google Chrome extension by visiting the Phantom app website.</li>
+                          </ul>
+                      </div>
+                  </div>
+              </div>
+          </div>
       </div>
-      <div className="step-container right">
-        <div className="step"></div>
-      </div>
-      <div className="step-container">
-        <div className="step"></div>
-      </div>
-      <div className="step-container right">
-        <div className="step"></div>
-      </div>
-    </div>
   );
 };
 

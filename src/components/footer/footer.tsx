@@ -16,9 +16,9 @@ const Footer = () => {
 
   return (
     <div className='footer-section' id='contact'>
-      <header className='footer-header'>Contact COLOSSUS</header>
+      <header className='footer-header'>Get some COLOSSUS here</header>
       <span>Ready to do this? Let&apos;s get rich</span>
-      <button className='copy-button' onClick={handleCopy}>COPY CODE</button>
+      <button className='copy-button' onClick={handleCopy}>CONTACT ADDRESS</button>
 
       <span className={`tooltip ${copied ? 'show' : ''}`}>Copied to clipboard</span>
     </div>

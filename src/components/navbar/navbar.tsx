@@ -6,9 +6,9 @@ const NavigationBar = () => {
     <div className='navigation-bar'>
         <div className="navigation-content">
             <a href="#home">Home</a>
-            <a href="#about">About Coin</a>
+            <a href="#about">About Colossus</a>
             <a href="#gallery">Images</a>
-            <a href="#contact">Contact</a>
+            <a href="#contact">Contact Address</a>
         </div>
     </div>
   );
