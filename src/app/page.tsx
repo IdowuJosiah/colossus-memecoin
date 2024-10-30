@@ -34,8 +34,8 @@ export default function Home() {
             <Image className={styles.banner__image} src={BannerImage} alt=''/>
             <div className={styles.banner__section__overlay}>
               <p>Hi there DeGEN</p>
-              <p className={styles.ma}>It&apos;s Pre Rich. Talking to you from the FUTURE</p>
-              <span>Let&apos;s create your own cinematic adventure.</span>
+              <p className={styles.ma}>It&apos;s COLOSSUS. Talking to you from the FUTURE</p>
+              <span>Let&apos;s create your own technological adventure.</span>
 
               <div className={styles.cta__buttons}>
                 <button className={styles.buy__button}>Buy Now</button>
@@ -45,7 +45,7 @@ export default function Home() {
           </div>
 
           <div className={styles.about__section} id="about">
-            <header>Discover the Power of the Colossus Memecoin</header>
+            <header>Discover the Power of the Colossus The Great</header>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A iste esse eius quam,
                expedita fugiat suscipit et unde hic voluptas non officia quidem obcaecati veritatis. 
                Aperiam illo expedita dolore ratione.
