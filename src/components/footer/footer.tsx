@@ -1,6 +1,11 @@
 "use client"
 import React, { useState } from 'react';
 import './footer.scss';
+// import { FaTwitter } from 'react-icons/fa';
+import { FaXTwitter } from 'react-icons/fa6';
+import { FaTelegramPlane } from 'react-icons/fa';
+import Image from 'next/image';
+import Dex from '../../../public/dex-screener-seeklogo.png'
 
 const Footer = () => {
   const [copied, setCopied] = useState(false);
@@ -19,6 +24,11 @@ const Footer = () => {
       <header className='footer-header'>Get some COLOSSUS here</header>
       <span>Ready to do this? Let&apos;s get rich</span>
       <button className='copy-button' onClick={handleCopy}>CONTACT ADDRESS</button>
+      <div className="footer-icons">
+        <FaXTwitter/>
+        <FaTelegramPlane />
+        <Image src={Dex} alt=''/>
+      </div>
 
       <span className={`tooltip ${copied ? 'show' : ''}`}>Copied to clipboard</span>
     </div>

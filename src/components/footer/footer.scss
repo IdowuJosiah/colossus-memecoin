@@ -46,4 +46,21 @@
         opacity: 1;
         pointer-events: auto;
     }
+
+    .footer-icons{
+        display: flex;
+        gap: 25px;
+        align-items: center;
+        margin: 35px 0px 0px 0px;
+
+        svg{
+            font-size: 30px;
+        }
+
+        img{
+            width: 30px;
+            height: 30px;
+            // border-radius: 50%;
+        }
+    }
 }
