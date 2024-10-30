@@ -7,7 +7,7 @@ const NavigationBar = () => {
         <div className="navigation-content">
             <a href="#home">Home</a>
             <a href="#about">About Colossus</a>
-            <a href="#gallery">Images</a>
+            <a href="#gallery">Memes</a>
             <a href="#contact">Contact Address</a>
         </div>
     </div>

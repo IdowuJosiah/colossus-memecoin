@@ -34,10 +34,14 @@
                     display: flex;
                     flex-direction: column;
                     gap: 15px;
+
                     .step-header{
                         font-size: 28px;
                         font-weight: 600;
-
+                        text-outline: black 1px;
+                    }
+                    .mid{
+                        text-outline:  black 2px;
                     }
                 }
             }

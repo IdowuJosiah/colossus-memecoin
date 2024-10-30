@@ -25,9 +25,21 @@ const Footer = () => {
       <span>Ready to do this? Let&apos;s get rich</span>
       <button className='copy-button' onClick={handleCopy}>CONTACT ADDRESS</button>
       <div className="footer-icons">
-        <FaXTwitter/>
-        <FaTelegramPlane />
-        <Image src={Dex} alt=''/>
+          <div className="links">
+              <a href="" className="">
+                  <FaXTwitter/>
+              </a>
+          </div>
+          <div className="links">
+              <a href="" className="">
+                  <FaTelegramPlane />
+              </a>
+          </div>
+          <div className="links">
+              <a href="" className="">
+                  <Image src={Dex} alt=''/>
+              </a>
+          </div>
       </div>
 
       <span className={`tooltip ${copied ? 'show' : ''}`}>Copied to clipboard</span>
