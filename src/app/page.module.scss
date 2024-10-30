@@ -15,7 +15,7 @@
         }
 
         @media screen and (max-width:920px) {
-            height: 50vh;
+            height: 60vh;
         }
 
 
@@ -190,4 +190,8 @@
             transition: ease-in-out .3s;
         }
     }
+}
+.get-link{
+    text-decoration: none;
+    color: inherit;
 }

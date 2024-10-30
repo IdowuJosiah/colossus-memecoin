@@ -38,8 +38,8 @@ export default function Home() {
               <span>Let&apos;s create your own technological adventure.</span>
 
               <div className={styles.cta__buttons}>
-                <button className={styles.buy__button}><a href="https://jup.ag/swap/SOL-8SuMAjoZeLGaaekNHP235Dv4soXsrcseFXefT3A9pump">Buy Now</a> </button>
-                <button className={styles.get__button}> <a href="https://dexscreener.com/solana/8wgy9ke3yatcvoiw4engaxvukpqr2pmvhzcmyzavlbke">Get on Dex</a></button>
+                <button className={styles.buy__button}><a style={{textDecoration:"none", color:"inherit"}} href="https://jup.ag/swap/SOL-8SuMAjoZeLGaaekNHP235Dv4soXsrcseFXefT3A9pump">Buy Now</a> </button>
+                <button className={styles.get__button}> <a style={{textDecoration:"none", color:"inherit"}} href="https://dexscreener.com/solana/8wgy9ke3yatcvoiw4engaxvukpqr2pmvhzcmyzavlbke">Get on Dex</a></button>
               </div>
             </div>
           </div>
