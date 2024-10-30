@@ -3,7 +3,6 @@ import React, { useEffect } from 'react';
 import './steps.scss';
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
-
 gsap.registerPlugin(ScrollTrigger);
 
 const Steps = () => {
