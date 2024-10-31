@@ -50,7 +50,7 @@ const Steps = () => {
                       <div className="career-info-container  second">
                           <ul className = 'career-info-path'>
                               <li className="step-header" style={{listStyle:"none"}}>GET SOME SOL</li>
-                              <li className="mid">Ensure you have SOL in your wallet to swap for $MEWING. If you don’t have any SOL, you can purchase SOL from an exchange or use a cross-chain swap service to send SOL to your wallet.</li>
+                              <li className="mid">Ensure you have SOL in your wallet to swap for $COLOSSUS. If you don’t have any SOL, you can purchase SOL from an exchange or use a cross-chain swap service to send SOL to your wallet.</li>
                           </ul>
                       </div>
                   </div>
@@ -60,7 +60,7 @@ const Steps = () => {
                       <div className="career-info-container">
                           <ul className = 'career-info-path'>
                               <li className="step-header" style={{listStyle:"none"}}> Go to <span><a style={{textDecoration:"none"}} href="https://jup.ag/">Jup.ag</a></span></li>
-                              <li className="mid">Visit Jup.ag in Google Chrome or use the browser within your Phantom app. Connect your wallet, paste the $MEWING token address into Jupiter, and confirm the swap. When prompted by Phantom for a wallet signature, approve it.</li>
+                              <li className="mid">Visit Jup.ag in Google Chrome or use the browser within your Phantom app. Connect your wallet, paste the $COLOSSUS token address into Jupiter, and confirm the swap. When prompted by Phantom for a wallet signature, approve it.</li>
 
                           </ul>
                       </div>

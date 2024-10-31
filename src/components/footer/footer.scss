@@ -5,6 +5,8 @@
     display: flex;
     flex-direction: column;
     line-height: 45px;
+    align-items: center;
+    justify-content: center;
 
     .copy-button {
         border: 1px solid #4CAF50;
