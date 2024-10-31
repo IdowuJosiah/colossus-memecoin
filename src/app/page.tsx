@@ -1,7 +1,6 @@
 "use client"
 import Image from "next/image";
 import styles from "./page.module.scss";
-import { useState } from "react";
 import NavigationBar from "@/components/navbar/navbar";
 // import SlideOutWords from "@/components/slide-text/slide-text";
 import BannerImage from '../../public/ai-generated-8644499_1280.jpg'
@@ -16,7 +15,7 @@ import MemeSix from '../../public/GbEioERbQAAEH3P.jpeg'
 import Steps from "@/components/steps/steps";
 
 export default function Home() {
-  const words = ['Hello there', ' Colossus Welcomes you', 'To the future'];
+  // const words = ['Hello there', ' Colossus Welcomes you', 'To the future'];
   // const [showMainContent, setShowMainContent] = useState(false);
 
   return (
@@ -45,13 +44,13 @@ export default function Home() {
           <b>About Colossus</b>
             <p>
 
-              This is more than just a token - it&apos;s a community takeover and celebration of cutting-edge AI technology. Inspired by the massive Colossus supercomputer that Elon Musk himself has proclaimed as "the most powerful training system in the world," our token brings the essence of AI innovation to the blockchain.
+              This is more than just a token - it&apos;s a community takeover and celebration of cutting-edge AI technology. Inspired by the massive Colossus supercomputer that Elon Musk himself has proclaimed as the most powerful training system in the world, our token brings the essence of AI innovation to the blockchain.
               </p>
              
               <b>Strategic Context</b>
               <p>
              
-              As Gilad Shainer from NVIDIA notes, "AI is becoming mission-critical and requires increased performance, security, scalability and cost-efficiency." Our Colossus token aims to capture this transformative moment in technological evolution.
+              As Gilad Shainer from NVIDIA notes, AI is becoming mission-critical and requires increased performance, security, scalability and cost-efficiency. Our Colossus token aims to capture this transformative moment in technological evolution.
           
               </p>
 
@@ -59,7 +58,7 @@ export default function Home() {
               <p>
  
               By bridging the world of advanced AI infrastructure with decentralized community engagement, Colossus token represents a unique intersection of technological innovation and collective ambition.
-              Born from the community&apos;s vision and inspired by xAI's groundbreaking Colossus supercomputer, our Colossus token represents a decentralized homage to the most powerful AI training system in the world.
+              Born from the community&apos;s vision and inspired by xAIs groundbreaking Colossus supercomputer, our Colossus token represents a decentralized homage to the most powerful AI training system in the world.
               </p>
            
           
@@ -67,7 +66,7 @@ export default function Home() {
             <b>Technological Inspiration</b>
             <p>
    
-              Colossus token draws its name and spirit from xAI's revolutionary AI infrastructure - the world&apos;s largest AI supercomputer dedicated to powering advanced language models. Just as the original Colossus comprises an impressive array of 200,000 NVIDIA Hopper GPUs, our token embodies the community&apos;s collective computational spirit.
+              Colossus token draws its name and spirit from xAIs revolutionary AI infrastructure - the world&apos;s largest AI supercomputer dedicated to powering advanced language models. Just as the original Colossus comprises an impressive array of 200,000 NVIDIA Hopper GPUs, our token embodies the community&apos;s collective computational spirit.
               Community-Driven Initiative
             </p>  
 
