@@ -2,7 +2,6 @@
 import Image from "next/image";
 import styles from "./page.module.scss";
 import NavigationBar from "@/components/navbar/navbar";
-// import SlideOutWords from "@/components/slide-text/slide-text";
 import BannerImage from '../../public/ai-generated-8644499_1280.jpg'
 import './globals.css'
 import Footer from "@/components/footer/footer";
@@ -15,8 +14,6 @@ import MemeSix from '../../public/GbEioERbQAAEH3P.jpeg'
 import Steps from "@/components/steps/steps";
 
 export default function Home() {
-  // const words = ['Hello there', ' Colossus Welcomes you', 'To the future'];
-  // const [showMainContent, setShowMainContent] = useState(false);
 
   return (
     <>
