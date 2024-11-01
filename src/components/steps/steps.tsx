@@ -3,7 +3,6 @@ import React, { useEffect } from 'react';
 import './steps.scss';
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
-import MemeOne from '../../public/WhatsApp Image 2024-10-29 at 20.37.29.jpeg'
 gsap.registerPlugin(ScrollTrigger);
 
 const Steps = () => {
