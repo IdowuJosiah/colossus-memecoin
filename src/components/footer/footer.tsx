@@ -23,20 +23,20 @@ const Footer = () => {
     <div className='footer-section' id='contact'>
       <header className='footer-header'>Get some COLOSSUS here</header>
       <span>Ready to do this? Let&apos;s get rich</span>
-      <button className='copy-button' onClick={handleCopy}>CONTACT ADDRESS</button>
+      <button className='copy-button' onClick={handleCopy}>CONTRACT ADDRESS</button>
       <div className="footer-icons">
           <div className="links">
-              <a href="" className="">
+              <a href="https://x.com/colossusctosol" className="">
                   <FaXTwitter/>
               </a>
           </div>
           <div className="links">
-              <a href="" className="">
+              <a href="" className="https://dexscreener.com/solana/8wgy9ke3yatcvoiw4engaxvukpqr2pmvhzcmyzavlbke">
                   <FaTelegramPlane />
               </a>
           </div>
           <div className="links">
-              <a href="" className="">
+              <a href="" className="https://dexscreener.com/solana/8wgy9ke3yatcvoiw4engaxvukpqr2pmvhzcmyzavlbke">
                   <Image src={Dex} alt=''/>
               </a>
           </div>
