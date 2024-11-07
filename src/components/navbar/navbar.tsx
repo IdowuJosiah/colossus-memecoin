@@ -8,7 +8,7 @@ const NavigationBar = () => {
             <a href="#home">Home</a>
             <a href="#about">About Colossus</a>
             <a href="#gallery">Memes</a>
-            <a href="#contact">Contact Address</a>
+            <a href="#contact">Contract Address</a>
         </div>
     </div>
   );
