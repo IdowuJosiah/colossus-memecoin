@@ -31,12 +31,12 @@ const Footer = () => {
               </a>
           </div>
           <div className="links">
-              <a href="" className="https://dexscreener.com/solana/8wgy9ke3yatcvoiw4engaxvukpqr2pmvhzcmyzavlbke">
+              <a href="https://t.me/ColossusPortalcto" className="">
                   <FaTelegramPlane />
               </a>
           </div>
           <div className="links">
-              <a href="" className="https://dexscreener.com/solana/8wgy9ke3yatcvoiw4engaxvukpqr2pmvhzcmyzavlbke">
+              <a href="https://dexscreener.com/solana/8wgy9ke3yatcvoiw4engaxvukpqr2pmvhzcmyzavlbke" className="">
                   <Image src={Dex} alt=''/>
               </a>
           </div>
